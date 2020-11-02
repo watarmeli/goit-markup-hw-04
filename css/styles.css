@@ -390,9 +390,40 @@ nav .current {
   margin-bottom: 20px;
 }
 
+.portfolio-card:hover,
+.portfolio-card:focus {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
 .portfolio-item .portfolio-card {
   padding-bottom: 20px;
   border: 1px solid #eeeeee;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+}
+
+.portfolio-text {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.portfolio-text .item-title {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--black);
+}
+
+.portfolio-text p {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-cl);
 }
 
 .footer {
