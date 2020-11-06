@@ -195,11 +195,11 @@ img {
   color: var(--accent-cl);
 }
 
-nav .link {
+.main-nav .link {
   color: var(--black);
 }
 
-nav .current {
+.main-nav .current {
   color: var(--accent-cl);
 }
 
@@ -235,6 +235,7 @@ nav .current {
 }
 
 .btn-main {
+  min-width: 200px;
   padding: 10px 32px;
   border-radius: 4px;
   border: 0;
@@ -258,6 +259,7 @@ nav .current {
   padding: 6px 22px;
   border: 0;
   border-radius: 4px;
+  min-width: ;
   background-color: var(--light-bg);
   color: var(--black);
   font-weight: 500;
