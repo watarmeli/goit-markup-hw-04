@@ -302,6 +302,34 @@ img {
   margin-bottom: 10px;
 }
 
+.feature-list .feature-item::before {
+  content: '';
+  display: block;
+  width: 270px;
+  height: 120px;
+  background-color: var(--light-bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.feature-item.icon-antenna::before {
+  background-image: url(../images/icons/antenna.svg);
+}
+
+.feature-item.icon-clock::before {
+  background-image: url(../images/icons/clock.svg);
+}
+
+.feature-item.icon-diagram::before {
+  background-image: url(../images/icons/diagram.svg);
+}
+
+.feature-item.icon-astronaut::before {
+  background-image: url(../images/icons/astronaut.svg);
+}
+
 .list-item .item-title {
   font-weight: 500;
   font-size: 16px;
