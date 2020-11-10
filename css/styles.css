@@ -69,6 +69,7 @@
   --dark-bg: #2f303a;
   --light-bg: #f5f4fa;
   --grey-bg: #c4c4c4;
+  --link-cl: #afb1b8;
 }
 
 html {
@@ -133,6 +134,10 @@ img {
   padding: 0;
 }
 
+.list {
+  list-style: none;
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-size: 26px;
@@ -191,20 +196,33 @@ img {
   color: var(--main-text-cl);
 }
 
+.main-nav .link {
+  color: var(--black);
+}
+
+.main-nav .link.current {
+  color: var(--accent-cl);
+}
+
 .link:hover,
 .link:focus {
   color: var(--accent-cl);
 }
 
-.main-nav .link {
-  color: var(--black);
+.contacts-list .contacts-link {
+  display: flex;
+  align-items: center;
 }
 
-.main-nav .current {
-  color: var(--accent-cl);
+.nav-icons-svg {
+  fill: currentColor;
+  margin-right: 10px;
 }
 
 .hero {
+  /* max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto; */
   padding-top: 200px;
   padding-bottom: 200px;
   background-color: var(--grey-bg);
@@ -409,6 +427,79 @@ img {
   margin-bottom: 10px;
 }
 
+.team-card .team-text {
+  margin-bottom: 16px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icons-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--white);
+  border-radius: 50%;
+}
+
+.social-icons-link:hover,
+.social-icons-link:focus {
+  background-color: var(--accent-cl);
+}
+
+.social-icons-svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--link-cl);
+}
+
+.social-icons-link:hover .social-icons-svg,
+.social-icons-link:focus .social-icons-svg {
+  fill: var(--white);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-icons-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  background-color: var(--white);
+  border: 1px solid var(--link-cl);
+  border-radius: 4px;
+}
+
+.clients-icons-link:hover,
+.clients-icons-link:focus {
+  border-color: var(--accent-cl);
+}
+
+.clients-icons-svg {
+  fill: var(--link-cl);
+}
+
+.clients-icons-link:hover .clients-icons-svg,
+.clients-icons-link:focus .clients-icons-svg {
+  fill: var(--accent-cl);
+}
+
 .filter {
   display: flex;
   justify-content: center;
@@ -502,4 +593,35 @@ img {
 
 .footer-list .address-item {
   margin-bottom: 9px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-contacts {
+  margin-right: 70px;
+}
+
+.footer-social {
+  margin-top: 12px;
+}
+
+.footer-title {
+  color: var(--white);
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.footer-social .social-icons-svg {
+  fill: var(--white);
+}
+
+.footer-social .social-icons-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social .social-icons-link:hover,
+.footer-social .social-icons-link:focus {
+  background-color: var(--accent-cl);
 }
